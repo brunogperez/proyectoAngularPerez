@@ -1,0 +1,4 @@
+<div class="list-group">
+    <button (click)="deleteList.emit(i)" *ngFor="let student of students, let i= index"
+        class="list-group-item">{{student}}</button>
+</div>
