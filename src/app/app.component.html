@@ -1,7 +1,12 @@
-<button class="btn btn-primary">ALUMNOS APROBADOS </button>
+<button class="btn btn-primary">ALUMNOS APROBADOS</button>
 
-<app-students-list (deleteList)="deleteList($event)" [students]="approvedStudents"></app-students-list>
+<app-students-list
+  (deleteList)="deleteList($event)"
+  [students]="approvedStudents"
+></app-students-list>
 
-<button  class="btn btn-primary">ALUMNOS DESAPROBADOS </button>
+<button class="btn btn-primary">ALUMNOS DESAPROBADOS</button>
 
 <app-students-list [students]="failedStudents"></app-students-list>
+
+<app-reactive-form />
